@@ -15,4 +15,10 @@ class Programmer extends Employee{
         }
     }
 
+    // overriding
+    public void bonus(){
+        System.out.println("Bonus = 20%");
+    }
+
+    
 }
