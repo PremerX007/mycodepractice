@@ -1,4 +1,4 @@
-class Employee {
+abstract class Employee {
 
     // Attribute Zone
     private String id;
@@ -44,9 +44,7 @@ class Employee {
         return this.saraly;
     }
     
-    public void bonus(){
-        System.out.println("Bonus = 10%");
-    }
+    public abstract void bonus(); //abstract
 
     public void displayInfo(){
         System.out.println("ID : " + this.id);
