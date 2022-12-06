@@ -2,11 +2,7 @@ public class Main{
     public static void main(String[] args) {
 
         Programmer p1 = new Programmer();
-        p1.setID("0201");
-        p1.setName("Premer");
-        p1.setSalary(40000.0);
-        p1.displayInfo();
- 
+        p1.skill("java","pyrhon","R");
         // int result = Employee.minimumSaraly;
         // System.out.println(result);
         // System.out.println(Company.year_founder);
