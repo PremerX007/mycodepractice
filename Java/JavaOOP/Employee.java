@@ -16,7 +16,7 @@ class Employee {
     }
 
     public Employee(){
-        
+        System.out.println("I'm Employee");
     }
 
     // Method Zone
@@ -44,6 +44,10 @@ class Employee {
         return this.saraly;
     }
     
+    public void bonus(){
+        System.out.println("Bonus = 10%");
+    }
+
     public void displayInfo(){
         System.out.println("ID : " + this.id);
         System.out.println("Name : " + this.name);
