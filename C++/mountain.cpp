@@ -1,22 +1,14 @@
 #include <iostream>
-#include <string>
-#include <sstream>
 
 using namespace std;
 
 int main(){
     int counter, temp, i=0, max;
-    string tempData, op;
     cin >> counter;
-    cin.ignore();
     int data[counter];
-    getline(cin,tempData);
-    stringstream st(tempData);
 
-    while (getline(st,op,' ')){
-        temp = stoi(op);
-        data[i] = temp;
-        i++;
+    for (int i=0; i<counter; i++){
+        cin >> data[i];
     }
 
     max = data[0];

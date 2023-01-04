@@ -1,14 +1,11 @@
-/*
-Point error : Keyboard buffer
-*/
+// #include <fstream>
 #include <iostream>
-#include <cstring>
-#include <string>
-#include <algorithm>
-#include <sstream>
 
 using namespace std;
-/*
-6
-1 2 4 3 2 5
-*/
+
+int main(){
+    int a, b=3;
+    a = b = 2 == 2;
+    cout << a << endl;
+    return 0;
+}
