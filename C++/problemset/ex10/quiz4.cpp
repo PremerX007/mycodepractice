@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 /* RANDOM X VALUE */
@@ -7,11 +8,7 @@ int line1(){
 }
 
 int line2(){
-    while (true){
-        int ans = (rand()%23 + 2);
-        if(ans%2==0) return ans;
-        else continue;
-    } 
+    return 2*(rand()%12 + 1);
 }
 
 int line3(){
@@ -19,14 +16,13 @@ int line3(){
 }
 
 int line4(){
-    while (true){
-        int ans = (rand()%1023 + 2);
-        
-    }
+    return pow(2, rand()%10 + 1);
 }
 
 int main(){
     srand(time(0));
-    cout << line1();
-    cout << line2();
+    cout << line1() << '\n';
+    cout << line2() << '\n';
+    cout << line3() << '\n';
+    cout << line4() << '\n';
 }
