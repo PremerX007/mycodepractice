@@ -16,7 +16,7 @@ int main(){
     int data[N] = {};
     srand(time(0));
     
-    for(int i=1; i<=1000000000; i++){
+    for(int i=1; i<=1000000000; i++){ //Test Case
         int temp = rander(1,N);
         data[temp-1]++;
     }
