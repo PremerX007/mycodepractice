@@ -1,22 +1,19 @@
 #include <iostream>
+#include <fstream>
+#include <cstdlib>
 
 using namespace std;
 
-int main(){
-    char c;
-    cin >> c;
-    switch (c)
-    {
-    case 'A':
-        cout << "AAAAA" << endl;
-        break;
-    
-    case 'B':
-        cout << "BBBBB" << endl;
-        break;
+unsigned int func(int x[]){
+    return sizeof(x)/sizeof(x[0]);
+}
 
-    default:
-        cout << "Not Match" << endl;
-        break;
-    }
+int main(){
+    int a[] = {1,2,3,4,5,6,7,8};
+    cout << sizeof(int*) << '\n';
+    cout << sizeof(*a) << '\n';
+    cout << func(a) << '\n';
+    cout << sizeof(char*) << '\n';
+    cout << sizeof(double*) << '\n';
+    return 0;
 }
