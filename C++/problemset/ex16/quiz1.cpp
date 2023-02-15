@@ -1,12 +1,12 @@
 /*
 
-Problem Set 15
+Problem Set 16
 Quiz 1
 
 */
 
-#include<iostream>
-#include<iomanip>
+#include <iostream>
+#include <iomanip>
 using namespace std;
 
 void myMatrix(int ***arr, int N){
@@ -27,14 +27,17 @@ void freeSpace(int **&p, int N){
 int main(){
     int **p;
     int N;
+
     cout << "N = ";
     cin >> N;
+
     myMatrix(&p,N);
+
     for(int i=0;i < N; i++){
         for(int j=0;j < N; j++){
             cout << setw(4) << p[i][j];
         }
-    cout << "\n";
+        cout << "\n";
     }
     freeSpace(p,N);
     return 0;
